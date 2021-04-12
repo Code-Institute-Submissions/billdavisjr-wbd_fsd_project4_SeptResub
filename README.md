@@ -188,27 +188,44 @@ Syntax checkers and Linters on GitPod
     - 
 
 ### Django frameworks
+
 See the requirements.txt file for all frameworks used; some are called by other frameworks we use directly and are added to the requirements.txt file using the command `$pip3 freeze >requirements.txt` and they can be installed by `pip3 install -r requirements.txt`
 
 - Allauth - for user loging/authentication
-- 
 
 ### JavaScript Frameworks
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 
+- [JQuery](https://jquery.com)
+  - The project uses **JQuery** to simplify DOM manipulation.
+
+- [Bootstrap](https://getbootstrap.com/)
+  - The project uses **Bootstrap** for CSS formatting of our page GUIs.
+
+### WIREFRAME TOOOLS
 
 - [Balsamiq](https://balsamiq.com/wireframes/)
+  - Wireframes for the design of the various pages were created in the popular Balsamiq wireframe tool; Code Institute gives
+  students a free license to use it for a year (at present, anyway).
 
-Other wireframe tools investigated
 - [Figma](https://www.figma.com)
-    - Web-based wireframe tool with a free tier; used because Balsamiq had a free key through
-    Code Institute that expired at the end of the year, in the middle of the design process 
-    and when the Code Institute staff was out of the office over the holidays. 
-    
-- [Pencil](https://pencil.evolus.vn/)
+  - Web-based wireframe tool with a free tier; used because Balsamiq had a free key through
+    Code Institute that expired at the end of the year, when meant it was going to expire in the middle of the design process
+    and when the Code Institute staff was out of the office over the holidays.  Stopped using Figma when Code Institute sent us
+    a key for Balsamiq for 2021.
 
-## Testing
+- [Pencil](https://pencil.evolus.vn/)
+  - Another wireframe tool that I investigated before going back to Balsamiq.
+
+### DATA CLEANUP
+
+- Microsft Excel
+  - my "database" of quotations has been kept in a simple text file for years, because it's fast and easy to add quotes to the end.
+    Also, a text filke can be used with any system. It's been fast enough in practice, even with over 10,000 quotes, and reading them 
+    into an in-memory array makes it speedy.  But for this project I wanted a database so I used Excel to clean up the text file into
+    rows and columns of data.  I also use Microsoft Visual Basic for Applications functions to do some of the cleanup and export the 
+    data in JSON format.
+
+## TESTING
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the 
 site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure 

@@ -187,6 +187,13 @@ Syntax checkers and Linters on GitPod
 - [Django]
     - 
 
+### Django frameworks
+See the requirements.txt file for all frameworks used; some are called by other frameworks we use directly and are added to the requirements.txt file using the command `$pip3 freeze >requirements.txt` and they can be installed by `pip3 install -r requirements.txt`
+
+- Allauth - for user loging/authentication
+- 
+
+### JavaScript Frameworks
 - [JQuery](https://jquery.com)
     - The project uses **JQuery** to simplify DOM manipulation.
 

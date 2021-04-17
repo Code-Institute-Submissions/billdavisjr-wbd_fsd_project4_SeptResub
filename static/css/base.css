@@ -25,6 +25,10 @@ unless we manually change it. */
     text-transform: uppercase;
 }
 
+.qotd-font {
+    font-family: cursive;
+}
+
 /* Ensures that the logo only takes up as much space as the text requires and no more. */ 
 .main-logo-link {
     width: fit-content;

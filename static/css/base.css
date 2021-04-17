@@ -10,7 +10,7 @@ body {
     font-family: 'Lato';
 }
 
-/* from Bulma - will ensure that whenever we use font awesome icons, they will always stay perfectly centred and have a consistent size
+/* from Bulma - will ensure that whenever we use font awesome icons, they will always stay perfectly centerd and have a consistent size
 unless we manually change it. */
 
 .icon {
@@ -51,10 +51,12 @@ unless we manually change it. */
     color: white;
 }
 
+/* modelled on bootstrap classes since they don't have this as of now*/
 .text-black {
     color: #000 !important;
 }
 
+/* modelled on bootstrap classes since they don't have this as of now */
 .border-black {
     border: 1px solid black !important;
 }
@@ -68,7 +70,7 @@ unless we manually change it. */
   }
 }
 
-/* fixed top navbar only on medium and up */
+/* fixed top navbar only on medium and up screens not mobile screens */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;

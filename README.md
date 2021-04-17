@@ -25,20 +25,21 @@ and so on.
 
 PREVIOUS VERSION OF THIS SITE FROM THIRD MILESTONE PROJECT
 
-- https://wbd-fsd-project3.herokuapp.com/
+- [https://wbd-fsd-project3.herokuapp.com/](https://wbd-fsd-project3.herokuapp.com/)
 
 GIT REPOSITORIES
 
-- https://github.com/billdavisjr/wbd_fsd_project3.git
+- [https://github.com/billdavisjr/wbd_fsd_project3.git](https://github.com/billdavisjr/wbd_fsd_project3.git)
 
-- https://git.heroku.com/wbd-fsd-project3.git
+- [https://git.heroku.com/wbd-fsd-project3.git](https://git.heroku.com/wbd-fsd-project3.git)
 
-## UX
+---
+## UX - USER EXPERIENCE
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to
 achieve and how your project is the best way to help them achieve these things.
 
-## USER STORIES
+### USER STORIES
 
 User stores are statements of the form "As a *user type*, I want to perform an *action*, so I can achieve a *goal*.
 
@@ -54,10 +55,11 @@ User stores are statements of the form "As a *user type*, I want to perform an *
 
 - As a user of this site I need to be able to keep a database of my own quotes including favoriting them and rating them.
 
-## FUTURE
+### FUTURE
 
 - As someone wanting a gift for a friend, I want to find or add a quote relevant to my friend, then have it put on a poster, t-shirt or coffee mug.
 
+---
 ## DESIGN
 
 DATABASE / DJANGO MODELS
@@ -191,6 +193,12 @@ See the requirements.txt file for all frameworks used; some are called by other 
 - [Bootstrap](https://getbootstrap.com/)
   - The project uses **Bootstrap** for CSS formatting of our page GUIs.
 
+- [FontAwesome](https://fontawesome.com/)
+  - We use FontAwesome for the various icons on our site.
+
+- [Google Fonts](https://fonts.google.com/)
+  - We use the Google Fonts API for our site fonts (Lato, etc.)
+
 ### WIREFRAME TOOOLS
 
 - [Balsamiq](https://balsamiq.com/wireframes/)
@@ -206,6 +214,8 @@ See the requirements.txt file for all frameworks used; some are called by other 
 - [Pencil](https://pencil.evolus.vn/)
   - Another wireframe tool that I investigated before going back to Balsamiq.
 
+### OTHER TOOLS / SERVICES
+
 - [GitHub]
 
 - [GitPod]
@@ -218,20 +228,25 @@ See the requirements.txt file for all frameworks used; some are called by other 
 - [PostgreSQL]
   - used in production on Heroku to replace the Sqlite 3 database Django normally uses.
 
-- Syntax checkers and Linters on GitPod
-  - list them
+- [AWS - Amazon Web Services](http://aws.amazon.com/)
+  - we use Amazon Web Services to <<<<< FILL IN THE REASONS >>>>>
+
+- Syntax checkers and Linters on GitPod are used to keep the code clean, correct and consistently styled for best practices.
+  - markdownlint
+  - cornflakes
 
 ### DATA CLEANUP
 
-- Microsft Excel
+- [Microsft Excel]
   - my "database" of quotations has been kept in a simple text file for years, because it's fast and easy to add quotes to the end.
     Also, a text filke can be used with any system. It's been fast enough in practice, even with over 10,000 quotes, and reading them
     into an in-memory array makes it speedy.  But for this project I wanted a database so I used Excel to clean up the text file into
-    rows and columns of data.  I also use Microsoft Visual Basic for Applications functions to do some of the cleanup and export the
-    data in JSON format.
+    rows and columns of data. I also use Microsoft Visual Basic for Applications (VBA) to write some code  to do some of the cleanup
+    and export the quotatio data in JSON format for import into the SQL database.
 
 ## TESTING
 
+<<<
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the
 site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure
 that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their
@@ -263,11 +278,11 @@ In addition, you should mention in this section how your project looks and works
     - iPad Air              ??? x ???
     - iPad mini             ??? x ???
 
-BUGS
+## BUGS
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't
 addressed them yet. If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-## Deployment
+## DEPLOYMENT
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages
 or Heroku). In particular, you should provide all details of the differences between the deployed version and the development version,
@@ -279,12 +294,12 @@ if any, including:
 
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-LOCAL CODE DEPLOYMENT
+### LOCAL CODE DEPLOYMENT
     GitPod
     Use Code Institute GitHub template (fork it) to set up a new GitPod environment and then check out a fork
         of this code into it.
 
-## Credits
+## CREDITS
 
 ### Content
 
@@ -299,12 +314,12 @@ LOCAL CODE DEPLOYMENT
 ### Acknowledgements
 
 - The template for this README.md came from a [template](https://github.com/Code-Institute-Solutions/readme-template) from Code Institute.
+The README file for that is at the end of this README file. 
 
 - Some code in the base.css file (the .icon class) came from [Bulma](https://bulma.io/), a CSS framework similar to Bootstrap
 
 ---
-
-THE FOLLOWING IS THE README.MD FILE FROM THE [CODE INSTITUTE GITPOD REPOSITORY TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template)
+# THE FOLLOWING IS THE README.MD FILE FROM THE [CODE INSTITUTE GITPOD REPOSITORY TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 If you have difficulty checking out the code and having it compile for some reason, fork the above
 template, create a new GitPod workspace from it by adding:

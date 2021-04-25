@@ -1,0 +1,146 @@
+[
+  {
+    "pk" : 0,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "none",
+      "display_name" : "Not yet categorized"
+    }
+  },
+  {
+    "pk" : 1,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "action",
+      "display_name" : "Action"
+    }
+  },
+  {
+    "pk" : 2,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "adaptability",
+      "display_name" : "Adaptability"
+    }
+  },
+  {
+    "pk" : 3,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "behavior",
+      "display_name" : "Behavior"
+    }
+  },
+  {
+    "pk" : 4,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "belief",
+      "display_name" : "Belief"
+    }
+  },
+  {
+    "pk" : 5,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "books",
+      "display_name" : "Books"
+    }
+  },
+  {
+    "pk" : 6,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "compassion",
+      "display_name" : "Compassion"
+    }
+  },
+  {
+    "pk" : 7,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "conservation",
+      "display_name" : "Conservation"
+    }
+  },
+  {
+    "pk" : 8,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "death",
+      "display_name" : "Death"
+    }
+  },
+  {
+    "pk" : 9,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "evil",
+      "display_name" : "Evil"
+    }
+  },
+  {
+    "pk" : 10,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "experience",
+      "display_name" : "Experience"
+    }
+  },
+  {
+    "pk" : 11,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "facts",
+      "display_name" : "Facts"
+    }
+  },
+  {
+    "pk" : 12,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "failure",
+      "display_name" : "Failure"
+    }
+  },
+  {
+    "pk" : 13,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "freedom",
+      "display_name" : "Freedom"
+    }
+  },
+  {
+    "pk" : 14,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "future",
+      "display_name" : "Future"
+    }
+  },
+  {
+    "pk" : 15,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "growth",
+      "display_name" : "Growth"
+    }
+  },
+  {
+    "pk" : 16,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "happiness",
+      "display_name" : "Happiness"
+    }
+  },
+  {
+    "pk" : 17,
+    "model" : "quotations.category",
+    "fields" : {
+      "name" : "humor",
+      "display_name" : "Humor"
+    }
+  }
+]

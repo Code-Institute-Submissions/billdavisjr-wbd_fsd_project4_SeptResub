@@ -34,6 +34,7 @@ GIT REPOSITORIES
 - [https://git.heroku.com/wbd-fsd-project3.git](https://git.heroku.com/wbd-fsd-project3.git)
 
 ---
+
 ## UX - USER EXPERIENCE
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to
@@ -60,6 +61,7 @@ User stores are statements of the form "As a *user type*, I want to perform an *
 - As someone wanting a gift for a friend, I want to find or add a quote relevant to my friend, then have it put on a poster, t-shirt or coffee mug.
 
 ---
+
 ## DESIGN
 
 DATABASE / DJANGO MODELS
@@ -279,6 +281,7 @@ In addition, you should mention in this section how your project looks and works
     - iPad mini             ??? x ???
 
 ## BUGS
+
 You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't
 addressed them yet. If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
@@ -295,6 +298,7 @@ if any, including:
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 ### LOCAL CODE DEPLOYMENT
+
     GitPod
     Use Code Institute GitHub template (fork it) to set up a new GitPod environment and then check out a fork
         of this code into it.
@@ -308,31 +312,30 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Media
 
 - The photos used in this site were obtained from the following source(s):
-  - Page background image from Pexels.com by [Stas Knop](https://www.pexels.com/@stasknop)
-    - URL: https://www.pexels.com/photo/white-book-in-white-table-near-yellow-wall-3760323/
+  - Page background image from Pexels.com by [Stas Knop](https://www.pexels.com/@stasknop) can be found [here](https://www.pexels.com/photo/white-book-in-white-table-near-yellow-wall-3760323/)
 
 ### Acknowledgements
 
-- The template for this README.md came from a [template](https://github.com/Code-Institute-Solutions/readme-template) from Code Institute.
-The README file for that is at the end of this README file. 
+- The template for this README file came from a [template](https://github.com/Code-Institute-Solutions/readme-template) from Code Institute.
+The README file for that is at the end of this README file.
 
 - Some code in the base.css file (the .icon class) came from [Bulma](https://bulma.io/), a CSS framework similar to Bootstrap
 
+- Creating the scrollable CATEGORY dropdown menu used the CSS from this code example: [Bootstrap Scrollable Dropdown Menu](https://www.codeply.com/go/Uh8qadr3q2/bootstrap-scrollable-dropdown-menu)
+
 ---
-# THE FOLLOWING IS THE README.MD FILE FROM THE [CODE INSTITUTE GITPOD REPOSITORY TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+## THE FOLLOWING IS THE README.MD FILE FROM THE [CODE INSTITUTE GITPOD REPOSITORY TEMPLATE](https://github.com/Code-Institute-Org/gitpod-full-template)
 
 If you have difficulty checking out the code and having it compile for some reason, fork the above
-template, create a new GitPod workspace from it by adding:
-
-https://gitpod.io/#
-
+template, create a new GitPod workspace from it by adding <https://gitpod.io/#>
 to the front of your forked repository URL, then once the code in the repository that runs when you
 open in it GitPod has set up the environment, copy over the source code for this project and replace
 the GitPod template code.  You might want to remove all the git related hidden directories/files first.
 
 ---
 
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+![Code Institute Logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome Bill Davis,
 

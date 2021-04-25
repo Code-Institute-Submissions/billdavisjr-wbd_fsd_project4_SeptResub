@@ -30,7 +30,7 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'account_logout' %}" class="dropdown-item">Product Management</a>
+             <a href="" class="dropdown-item">Quotation Management</a>
             {% endif %}
             <a href="" class="dropdown-item">My Profile</a>
             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -40,6 +40,7 @@
         {% endif %}
     </div>
 </li>
+<!-- Disabled for now; might need for subscriptions, might not.
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
         <div class="text-center">
@@ -54,3 +55,4 @@
         </div>
     </a>
 </li>
+-->

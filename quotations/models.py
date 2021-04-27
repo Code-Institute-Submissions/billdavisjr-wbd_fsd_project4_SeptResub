@@ -8,7 +8,6 @@ class Category(models.Model):
     class Meta:
         verbose_name_plural = 'Categories'
 
-
     name = models.CharField(max_length=254)
     display_name = models.CharField(max_length=254)
     # note: did not add null=True and blank=True params to these
@@ -22,14 +21,16 @@ class Category(models.Model):
 
 
 class Quotation(models.Model):
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey('Category', null=True,
+                                 blank=True, on_delete=models.SET_NULL)
     text = models.TextField()
     person = models.CharField(max_length=254)
 
     source = models.CharField(max_length=254, blank=True, default='')
     dateSaid = models.DateField(null=True, blank=True)
     yearsLived = models.CharField(max_length=254, blank=True, default='')
-    stars = models.DecimalField(max_digits=2, decimal_places=1, null=True, blank=True)
+    stars = models.DecimalField(max_digits=2, decimal_places=1,
+                                null=True, blank=True)
     occupation = models.TextField(blank=True)
     realName = models.CharField(max_length=254, blank=True)
     birthdate = models.DateField(null=True, blank=True)

@@ -12,12 +12,20 @@
 
 {% block content %}
     <div class="container h-100">
-        <div class="row h-100">
-            <!-- 7 columns by default, or 6 cols on medium or larger screens-->
-            <div class="col-7 col-md-6 ">
+        <div class="row" id="qotd-banner">
+            <div class="col bg-black text-white text-center">
+                {% if qotd %}
+                    <h4 class="qotd-font my-1">{{ qotd }}</h4>
+                {% else %}
+                    <h4 class="qotd-font my-1">&ldquo;I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;<br/>  &mdash; Marlene Dietrich</h4>
+                {% endif %}
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col text-center">
                 <div class="my-5">
                     <h4>
-                        <!-- a href="" class="search-now btn btn-lg rounded-0 text-uppercase py-3">Search Now!</a -->
+                        <a href="{% url 'quotations' %}" class="browse-now-button btn btn-lg border-black text-uppercase py-3">Browse Now!</a>
                     </h4>
                 </div>
             </div>

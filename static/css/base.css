@@ -28,7 +28,8 @@ unless we manually change it. */
 
 .qotd-font {
     font-family: 'Caveat', cursive;
-    font-size: 1.25rem; 
+    font-size: 2.0rem; 
+
 }
 
 /* Ensures that the logo only takes up as much space as the text requires and no more. */ 
@@ -36,10 +37,11 @@ unless we manually change it. */
     width: fit-content;
 }
 
-.shop-now-button {
+.browse-now-button {
     background: black;
     color: white;
     min-width: 260px;
+    opacity: 50%;
 }
 
 .btn-black {
@@ -47,9 +49,9 @@ unless we manually change it. */
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.browse-now-button:hover,
+.browse-now-button:active,
+.browse-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {

@@ -23,11 +23,13 @@ unless we manually change it. */
 
 .logo-font {
     text-transform: uppercase;
+    font-size: 1.5rem;
 }
 
 .qotd-font {
     font-family: 'Caveat', cursive;
-    font-size: 2rem; }
+    font-size: 1.25rem; 
+}
 
 /* Ensures that the logo only takes up as much space as the text requires and no more. */ 
 .main-logo-link {
@@ -66,8 +68,8 @@ unless we manually change it. */
 }
 
 .bg-black {
-    background: #000 !important;
-    opacity: 50%;
+    background: rgb(78, 73, 73) !important;
+    /* opacity: 50%; */
 }
 
 .overlay {
@@ -79,6 +81,14 @@ unless we manually change it. */
     background: white;
     z-index: -1;
 }
+
+/* from https://www.codeply.com/go/Uh8qadr3q2/bootstrap-scrollable-dropdown-menu */
+.scrollable-menu {
+    height: auto;
+    max-height: 600px;
+    overflow-x: hidden;
+}
+
 
 /* -------------------------------- Media Queries */
 
@@ -102,11 +112,4 @@ unless we manually change it. */
     .header-container {
         padding-top: 164px;
     }
-}
-
-/* from https://www.codeply.com/go/Uh8qadr3q2/bootstrap-scrollable-dropdown-menu */
-.scrollable-menu {
-    height: auto;
-    max-height: 600px;
-    overflow-x: hidden;
 }

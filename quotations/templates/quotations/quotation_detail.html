@@ -14,55 +14,46 @@
     <!-- div class="overlay"></div -->
     <div class="container-fluid">
         <div class="row">
-            <div class="quotation-container col-10 offset-1">
+            <div class="col-12 col-md-10 col-lg-8 offset-lg-2">
                 <div class="row mt-1 mb-5">
                     <div class="col-12 mb-3">
                         &nbsp; 
                     </div>
                 </div>
                 <div class="row">
-                    {% for quotation in quotations %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="col-12"> <!-- col-sm-6 col-md-6 col-lg-4 col-xl-3"-->
                             <div class="card h-100 border-1">
                                 <div class="card-body pb-0">
-                                    <a href="{% url 'quotation_detail' quotation.id %}"><p class="lead mb-0 font-weight-bold">"{{ quotation.text }}"</p></a>
+                                    <h2 class="lead mb-0 font-weight-bold">"{{ quotation.text }}"</h2>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <!-- turn the person into a col-12 and the stars and other stuff such as favorite into new row with a col-# -->
                                             <p class="mb-0 text-right"> &mdash; {{ quotation.person }}</p>
                                             {% if quotation.stars %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ quotation.stars }} / 5.0</small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
+                                            <!-- 
+                                                - get category name from category id in quotation.category
+                                            -->
+                                            <hr>
+                                            <p class="mb-0"><strong>Favorite:</strong> {{ quotation.favorite }}</p>
+                                            <p class="mb-0"><strong>Source:</strong> {{ quotation.source }}</p>
+                                            <p class="mb-0"><strong>Category:</strong> {{ quotation.category }}</p>
+                                            <p class="mb-0"><strong>Date Said:</strong> {{ quotation.dateSaid }}</p>
+                                            <p class="mb-0">&nbsp; </p>                                            
+                                            <p class="mb-0"><strong>Years Lived:</strong> {{ quotation.yearsLived }}</p>
+                                            <p class="mb-0"><strong>Birth Date:</strong> {{ quotation.birthdate }}</p>
+                                            <p class="mb-0"><strong>Real Name:</strong> {{ quotation.realName }}</p>
+                                            <p class="mb-0"> &nbsp; </p>                                            
+                                            <p class="mb-0"><strong>Quote id:</strong> {{ quotation.pk }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                &nbsp; 
-                            </div>
-                        {% endif %}                        
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                &nbsp;
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                &nbsp; 
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                &nbsp; 
-                            </div>
-                        {% endif %}
-                    {% endfor %}
                 </div>
                 <div class="row mt-1 mb-1">
                     <div class="col-12 mb-1">

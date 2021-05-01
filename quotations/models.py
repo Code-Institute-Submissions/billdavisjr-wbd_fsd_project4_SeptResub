@@ -14,7 +14,7 @@ class Category(models.Model):
     # as these both are required and must be non-blank
 
     def __str__(self):
-        return self.name
+        return self.display_name
 
     def get_display_name(self):
         return self.display_name

@@ -115,3 +115,19 @@ unless we manually change it. */
         padding-top: 164px;
     }
 }
+
+
+/* pad the top when navbar collapsed on mobile */
+/*
+@media (min-width: 991px) {
+
+    .header-container {
+        padding-top: 110px;
+    }
+
+
+    body {
+        height: calc(100vh - 116px);
+    }
+}
+*/

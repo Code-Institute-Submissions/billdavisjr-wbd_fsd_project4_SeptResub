@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Quotation
+from .models import Quotation, Category
 
 # Create your views here.
 
@@ -10,13 +10,15 @@ def all_quotations(request):
     """ View to show all quotations, as well as sorting, searching  """
 
     quotations = Quotation.objects.all()
+    categories = Category.objects.all()
+
     query = None
 
     if request.GET:
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't anything to search for!")
+                messages.error(request, "You didn't provide anything to search for!")
                 return redirect(reverse('quotations'))
 
             queries = Q(text__icontains=query) | Q(person__icontains=query)
@@ -24,6 +26,7 @@ def all_quotations(request):
 
     context = {
         'quotations': quotations,
+        'categories': categories,
         'search_term': query,
     }
 

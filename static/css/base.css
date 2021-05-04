@@ -87,7 +87,7 @@ unless we manually change it. */
 /* from https://www.codeply.com/go/Uh8qadr3q2/bootstrap-scrollable-dropdown-menu */
 .scrollable-menu {
     height: auto;
-    max-height: 600px;
+    max-height: 300px;
     overflow-x: hidden;
 }
 
@@ -118,16 +118,15 @@ unless we manually change it. */
 
 
 /* pad the top when navbar collapsed on mobile */
-/*
+
 @media (min-width: 991px) {
 
     .header-container {
         padding-top: 110px;
     }
 
-
     body {
         height: calc(100vh - 116px);
     }
 }
-*/
+

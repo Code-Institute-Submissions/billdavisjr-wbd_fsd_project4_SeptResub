@@ -16,20 +16,10 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="category-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Category
             </a>
-            <div class="dropdown-menu border-1 scrollable-menu " aria-labelledby="category-link">
-                <a href="" class="dropdown-item">Category 1</a>
-                <a href="" class="dropdown-item">Category 2</a>
-                <a href="" class="dropdown-item">Category 3</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category N</a>
-                <a href="" class="dropdown-item">Category Z</a>
+            <div class="dropdown-menu border-1 scrollable-menu" aria-labelledby="category-link">
+                {% for category in categories %}
+                    <a href="{% url 'quotations' %}?category={{ category.display_name }}" class="dropdown-item">{{ category.display_name }}</a>
+                {% endfor %}
             </div>
         </li>
 

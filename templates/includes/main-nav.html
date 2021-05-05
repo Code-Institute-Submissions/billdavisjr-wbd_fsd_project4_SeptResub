@@ -17,8 +17,10 @@
                 Category
             </a>
             <div class="dropdown-menu border-1 scrollable-menu" aria-labelledby="category-link">
+                <a href="{% url 'quotations' %}" class="dropdown-item">All Categories</a>
+                <div class="dropdown-divider"></div>
                 {% for category in categories %}
-                    <a href="{% url 'quotations' %}?category={{ category.display_name }}" class="dropdown-item">{{ category.display_name }}</a>
+                    <a href="{% url 'quotations' %}?category={{ category.name }}" class="dropdown-item">{{ category.display_name }}</a>
                 {% endfor %}
             </div>
         </li>

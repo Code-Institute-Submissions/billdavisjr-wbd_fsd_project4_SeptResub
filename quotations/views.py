@@ -13,8 +13,17 @@ def all_quotations(request):
     categories = Category.objects.all()
 
     query = None
+    category_list = None
 
     if request.GET:
+        if 'category' in request.GET:
+            # Note: following supports more than one category, separated
+            # by commans, for future use:
+            category_filter = request.GET['category'].split(',')
+            # to display category(s) filtered if we want:
+            category_list = Category.objects.filter(name__in=category_filter)
+            quotations = quotations.filter(category__name__in=category_filter)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -27,6 +36,7 @@ def all_quotations(request):
     context = {
         'quotations': quotations,
         'categories': categories,
+        'category_list': category_list,
         'search_term': query,
     }
 

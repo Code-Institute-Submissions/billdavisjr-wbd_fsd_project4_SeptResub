@@ -91,6 +91,11 @@ unless we manually change it. */
     overflow-x: hidden;
 }
 
+.quote_text {
+    color: black;
+    display: inline-block;  /* immportant to hide underline */
+    text-decoration: none !important;
+}
 
 /* -------------------------------- Media Queries */
 

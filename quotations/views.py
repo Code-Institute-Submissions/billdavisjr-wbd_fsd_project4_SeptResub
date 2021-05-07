@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from .models import Quotation, Category
+from django.db.models.functions import Lower
 
 # Create your views here.
 
@@ -14,8 +15,23 @@ def all_quotations(request):
 
     query = None
     category_list = None
+    sort = None
+    direction = None
 
     if request.GET:
+        # sort by person, stars, category
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'person':
+                sortkey = 'lower_person'
+                quotations = quotations.annotate(lower_person=Lower('person'))
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            quotations = quotations.order_by(sortkey)
+
         if 'category' in request.GET:
             # Note: following supports more than one category, separated
             # by commans, for future use:
@@ -33,11 +49,15 @@ def all_quotations(request):
             queries = Q(text__icontains=query) | Q(person__icontains=query)
             quotations = quotations.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+    # Note: above variable will be None_None if no sorting
+
     context = {
         'quotations': quotations,
         'categories': categories,
         'category_list': category_list,
         'search_term': query,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'quotations/quotations.html', context)

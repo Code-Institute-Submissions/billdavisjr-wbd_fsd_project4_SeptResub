@@ -5,10 +5,10 @@
                 Sorting
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="sorting-link">
-                <a href="" class="dropdown-item">By Person</a>
-                <a href="" class="dropdown-item ">By Star Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="{% url 'quotations' %}" class="dropdown-item ">All Quotations</a>
+                <a href="{% url 'quotations' %}?sort=person&direction=asc" class="dropdown-item">By Person</a>
+                <a href="{% url 'quotations' %}?sort=stars&direction=desc" class="dropdown-item ">By Star Rating</a>
+                <a href="{% url 'quotations' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'quotations' %}?sort=favorite&direction=desc" class="dropdown-item ">By Favorited</a>
             </div>
         </li>
 

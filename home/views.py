@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.db.models import Q
 from quotations.models import Quotation, Category
-from random import seed, randint
+from random import randint
 
 # Create your views here.
 
@@ -23,10 +23,8 @@ def index(request):
 
     if quotations.count():
         qc = quotations.count()
-        # seed(1)
-        print(qc, "quotes about quotes found.")
         rc = randint(0, qc-1)
-        print("Chose quote #", rc, "of", qc)
+        # print("Chose quote #", rc, "of", qc)
         randomquote = quotations[rc]
         print(randomquote)
     else:

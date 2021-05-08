@@ -43,11 +43,8 @@ def all_quotations(request):
 
         if 'person' in request.GET:
             query = request.GET['person']
-            print(query)
             queries = Q(person__icontains=query)
-            print(queries)
             quotations = quotations.filter(queries)
-            print(quotations)
 
         if 'q' in request.GET:
             query = request.GET['q']

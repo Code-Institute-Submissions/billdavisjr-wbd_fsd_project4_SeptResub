@@ -17,6 +17,7 @@ def all_quotations(request):
     category_list = None
     sort = None
     direction = None
+    person = None
 
     if request.GET:
         # sort by person, stars, category
@@ -39,6 +40,14 @@ def all_quotations(request):
             # to display category(s) filtered if we want:
             category_list = Category.objects.filter(name__in=category_filter)
             quotations = quotations.filter(category__name__in=category_filter)
+
+        if 'person' in request.GET:
+            query = request.GET['person']
+            print(query)
+            queries = Q(person__icontains=query)
+            print(queries)
+            quotations = quotations.filter(queries)
+            print(quotations)
 
         if 'q' in request.GET:
             query = request.GET['q']

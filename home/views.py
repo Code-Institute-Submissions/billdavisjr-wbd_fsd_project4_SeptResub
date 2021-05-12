@@ -28,7 +28,10 @@ def index(request):
         randomquote = quotations[rc]
         print(randomquote)
     else:
-        randomquote = '"I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself."  -- Marlene Dietrich'
+        randomquote = '"I love quotations because it is a joy to '
+        + 'find thoughts one might have, beautifully '
+        + 'expressed with much authority by someone '
+        + 'recognized wiser than oneself."  -- Marlene Dietrich'
 
     context = {
         'quotations': quotations,

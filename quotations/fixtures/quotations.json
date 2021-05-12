@@ -1,18 +1,4 @@
 [
-     { "pk":  9769, "model":  "quotations.quotation", 
-          "fields": {
-                              "text": "I like to play indoors better, because that's where all the electrical outlets are.",
-                              "person": "A fourth-grader",
-                              "source": "",
-                              "category": "0",
-                              "dateSaid": null,
-                              "yearsLived": "",
-                              "stars": "3.0",
-                              "occupation": "",
-                              "realName": "",
-                              "birthdate": null,
-                              "favorite": "False"
-          }     },
      { "pk":  3063, "model":  "quotations.quotation", 
           "fields": {
                               "text": "Pessimism's just the common sense knowledge that there's more ways for something to go wrong than for it to go right...",

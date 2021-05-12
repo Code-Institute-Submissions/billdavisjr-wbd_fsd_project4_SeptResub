@@ -48,17 +48,19 @@
             <div class="dropdown-menu border-1" aria-labelledby="featured-link">
                 <!-- FUTURE: get this from a "featured" table in the models. Add this to the GitHub issues section as a feature request-->
                 <a href="{% url 'quotations' %}?person=Abraham%20Lincoln" class="dropdown-item">Abraham Lincoln</a>
-                <a href="" class="dropdown-item">Albert Einstein</a>
-                <a href="" class="dropdown-item">Ambrose Bierce</a>
-                <a href="" class="dropdown-item">Benjamin Franklin</a>
-                <a href="" class="dropdown-item">Carl Sagan</a>
-                <a href="" class="dropdown-item">Mark Twain</a>
-                <a href="" class="dropdown-item">Ralph Waldo Emerson</a>
-                <a href="" class="dropdown-item">Robert A. Heinlein</a>
-                <a href="" class="dropdown-item">Steve Jobs</a>
-                <a href="" class="dropdown-item">Steven Wright</a>
-                <a href="" class="dropdown-item">Thomas Jefferson</a>
-                <a href="" class="dropdown-item">Sir Winston Churchill</a> <!--quotes have names with and without Sir-->
+                <a href="{% url 'quotations' %}?person=Albert%20Einstein" class="dropdown-item">Albert Einstein</a>
+                <a href="{% url 'quotations' %}?person=Ambrose%20Bierce" class="dropdown-item">Ambrose Bierce</a>
+                <a href="{% url 'quotations' %}?person=Benjamin%20Franklin" class="dropdown-item">Benjamin Franklin</a>
+                <a href="{% url 'quotations' %}?person=Carl%20Sagan" class="dropdown-item">Carl Sagan</a>
+                <a href="{% url 'quotations' %}?person=Isaac%20Asimov" class="dropdown-item">Isaac Asimov</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'quotations' %}?person=Mark%20Twain" class="dropdown-item">Mark Twain</a>
+                <a href="{% url 'quotations' %}?person=Ralph%Waldo%20Emerson" class="dropdown-item">Ralph Waldo Emerson</a>
+                <a href="{% url 'quotations' %}?person=Robert%20A.%20Heinlein" class="dropdown-item">Robert A. Heinlein</a>
+                <a href="{% url 'quotations' %}?person=Steve%20Jobs" class="dropdown-item">Steve Jobs</a>
+                <a href="{% url 'quotations' %}?person=Steven%20Wright" class="dropdown-item">Steven Wright</a>
+                <a href="{% url 'quotations' %}?person=Thomas%20Jefferson" class="dropdown-item">Thomas Jefferson</a>
+                <a href="{% url 'quotations' %}?person=Winston%20Churchill" class="dropdown-item">Sir Winston Churchill</a> <!--quotes have names with and without Sir-->
             </div>
         </li>
 

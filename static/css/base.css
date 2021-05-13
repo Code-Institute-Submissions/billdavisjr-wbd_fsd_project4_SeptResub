@@ -23,7 +23,12 @@ unless we manually change it. */
 
 .logo-font {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
+}
+
+.menu-font {
+    text-transform: uppercase;
+    font-size: 1.50rem;
 }
 
 .qotd-font {

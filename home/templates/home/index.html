@@ -13,11 +13,13 @@
 {% block content %}
     <div class="container h-100">
         <div class="row" id="qotd-banner">
-            <div class="col bg-black text-white text-center">
+            <div class="offset-3 col-6 bg-black text-white text-center">
                 {% if randomquote %}
-                    <h4 class="qotd-font my-1">{{ randomquote }}</h4>
+                    <h4 class="qotd-font my-1">&ldquo;{{ randomquote.text }}&rdquo;</h4>
+                    <h4 class="qotd-font my-1 text-right"> &mdash; {{ randomquote.person }}</h4>
                 {% else %}
-                    <h4 class="qotd-font my-1">&ldquo;x*** I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;<br/>  &mdash; Marlene Dietrich</h4>
+                    <h4 class="qotd-font my-1">&ldquo;I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;</h4>
+                    <h4 class="quotd-font my-1 text-right"> &mdash; Marlene Dietrich</h4>
                 {% endif %}
             </div>            
         </div>

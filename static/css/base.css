@@ -97,7 +97,6 @@ unless we manually change it. */
     text-decoration: none !important;
 }
 
-
 /* add a bit of shadow to quote cards; Bootstrap 4's  .card class doesn't seem to work with Bootstrap's .shadow class */
 .card {
     box-shadow: 5px 5px 5px rgba(100,100,100,0.50);

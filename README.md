@@ -237,6 +237,10 @@ See the requirements.txt file for all frameworks used; some are called by other 
   - markdownlint
   - cornflakes
 
+I attempted to use tools such as [TinyJPG](https://tinyjpg.com/) to shrink the size of the background graphic (yellow with a book at 
+the bottom) but got too much banding of the yellow background and so did it myself using a graphics program and shrinking it myself.
+I got it down to about 50% of the original size, at least, before JPEG compression artifacts started banding the yellow background.
+
 ### DATA CLEANUP
 
 - [Microsft Excel]

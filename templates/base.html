@@ -34,9 +34,15 @@
     {% endblock %}
 
     {% block extra_js %}
+        <script> 
+            // used when you click on the site title/logo at the top of the page to go to the index.html page. 
+            function go_home() {
+                location.href="{% url 'home' %}";
+            }
+        </script>
     {% endblock %}
 
-    <title>Quotations.Space {% block extra_title %}{% endblock %}</title>
+        <title>Quotations.Space {% block extra_title %}{% endblock %}</title>
   </head>
   <body>
     <header class="container-fluid fixed-top">
@@ -44,7 +50,7 @@
             <div class="col-1 py-0 py-lg-0">&nbsp;</div>
             <div class="col-10 text-center text-nowrap py-1 py-lg-0">
                     <h1 class="logo-font text-warning my-0">
-                        <span class="icon"><sup><i class="fas fa-quote-left"></i></sup></span><strong onclick="location.href='{% url 'home' %}';">&nbsp;Quotations.Space&nbsp;</strong><span class="icon"><sup><i class="fas fa-quote-right"></i></sup></span>
+                        <span class="icon"><sup><i class="fas fa-quote-left"></i></sup></span><strong onclick="go_home();">&nbsp;Quotations.Space&nbsp;</strong><span class="icon"><sup><i class="fas fa-quote-right"></i></sup></span>
                     </h1>
             </div>
             <div class="col-1 py-1 py-lg-0">
@@ -88,7 +94,7 @@
                 </ul>
             </div>
         </div>
-        <div id="searchnav" class="row bg-dark pt-lg-0 pb-lg-2 d-none d-lg-flex">
+        <div id="searchnav" class="row  bg-dark pt-lg-2 pb-lg-2 d-none d-lg-flex">
             <div class="offset-3 col-6 mx-auto my-auto pb-2 pb-lg-2">
                 <form method="GET" action="{% url 'quotations' %}">
                     <div class="input-group w-100">
@@ -104,7 +110,7 @@
                 </form>
             </div>
         </div>
-        <div class="row bg-white">
+        <div class="row bg-warning text-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

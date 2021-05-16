@@ -1,4 +1,4 @@
-          # Full Stack Development Course Milestone Project #4 of 4
+# Full Stack Development Course Milestone Project #4 of 4
 
 ## December 2020
 
@@ -237,9 +237,16 @@ See the requirements.txt file for all frameworks used; some are called by other 
   - markdownlint
   - cornflakes
 
-I attempted to use tools such as [TinyJPG](https://tinyjpg.com/) to shrink the size of the background graphic (yellow with a book at 
+I attempted to use tools such as [TinyJPG](https://tinyjpg.com/) to shrink the size of the background graphic (yellow with a book at
 the bottom) but got too much banding of the yellow background and so did it myself using a graphics program and shrinking it myself.
 I got it down to about 50% of the original size, at least, before JPEG compression artifacts started banding the yellow background.
+
+To add a favicon.ico to a Django app so it has a distinctive icon in the web browser window/tab, I found information at:
+
+<https://simpleit.rocks/python/django/django-favicon-adding/>
+
+I don't know why the icon is the yellow color I wanted into the tab when in reality it's blue; I have some suspicions but no
+answer.
 
 ### DATA CLEANUP
 

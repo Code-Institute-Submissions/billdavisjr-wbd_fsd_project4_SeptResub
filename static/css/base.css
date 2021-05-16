@@ -10,6 +10,16 @@ body {
     font-family: 'Lato';
 }
 
+#topnav {
+    /* from https://commons.wikimedia.org/wiki/File:StarfieldSimulation.gif */
+    background-image: url('/media/StarfieldSimulation.gif'); 
+    background-color: black;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* height: 164px; /* You must set a specified height */
+    
+}
 /* from Bulma - will ensure that whenever we use font awesome icons, they will always stay perfectly centerd and have a consistent size
 unless we manually change it. */
 
@@ -106,6 +116,7 @@ unless we manually change it. */
 .card {
     box-shadow: 5px 5px 5px rgba(100,100,100,0.50);
   }
+
 
 /* -------------------------------- Media Queries */
 

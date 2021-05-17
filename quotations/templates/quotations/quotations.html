@@ -31,7 +31,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <!-- turn the person into a col-12 and the stars and other stuff such as favorite into new row with a col-# -->
-                                            <p class="mb-0 text-right"> &mdash; {{ quotation.person }}</p>
+                                            <p class="mb-0 text-right"><em> &mdash; {{ quotation.person }}</em></p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -40,22 +40,27 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-4">
+                                        <div class="col-6 text-left">
                                             {% if quotation.stars %}
                                                 <small class="text-muted"><i class="text-warning fas fa-star mr-1"></i>{{ quotation.stars }} / 5.0</small>
                                             {% else %}
                                                 <small class="text-muted"><i class="text-warning far fa-star mr-1"></i>No Rating</small>
                                             {% endif %}
                                         </div>
-                                        <div class="col-4 text-center">
+                                        <div class="col-6 text-right">
                                             {% if quotation.favorite %}
                                                 <small class="text-danger"><i class="fas fa-heart mr-1"></i></small>
                                             {% else %}
                                             <small class="text-danger"><i class="far fa-heart mr-1"></i></small>
                                             {% endif %}
                                         </div>               
-                                        <div class="col-4 text-right">
-                                            <small class="text-muted">{{ quotation.category }}</small>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-right">
+                                            <i class="fas fa-tag mr-1"></i>
+                                            <a class="category-badge text-decoration-none" href="{% url 'quotations' %}?category={{ quotation.category.name }}">
+                                                <span class="badge badge-pill badge-warning">{{ quotation.category.display_name }}</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>

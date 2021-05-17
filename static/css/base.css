@@ -142,6 +142,11 @@ unless we manually change it. */
     }
 }
 
+/* invert colors of category badge when hovering */
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
+}
 
 /* pad the top when navbar collapsed on mobile */
 

@@ -245,17 +245,10 @@ To add a favicon.ico to a Django app so it has a distinctive icon in the web bro
 
 <https://simpleit.rocks/python/django/django-favicon-adding/>
 
-I don't know why the icon is the yellow color I wanted into the tab when in reality it's blue; I have some suspicions but no
-answer.
+## DATA CLEANUP
 
-### DATA CLEANUP
-
-- [Microsft Excel]
-  - my "database" of quotations has been kept in a simple text file for years, because it's fast and easy to add quotes to the end.
-    Also, a text filke can be used with any system. It's been fast enough in practice, even with over 10,000 quotes, and reading them
-    into an in-memory array makes it speedy.  But for this project I wanted a database so I used Excel to clean up the text file into
-    rows and columns of data. I also use Microsoft Visual Basic for Applications (VBA) to write some code  to do some of the cleanup
-    and export the quotatio data in JSON format for import into the SQL database.
+- Microsft Excel
+  - my "database" of quotations has been kept in a simple text file for years, because it's fast and easy to add quotes to the end. It's also each to move to different platforms, as I have done repeatedly over many years when learning a new programming language or p  latform. Also, a text filke can be used with any system. It's been fast enough in practice, even with over 10,000 quotes, and reading them into an in-memory array makes it speedy.  But for this project I wanted a database so I used Excel to clean up the text file into rows and columns of data. I also use Microsoft Visual Basic for Applications (VBA) to write some code  to do some of the cleanup and export the quotatio data in JSON format for import into the SQL database.
 
 ## TESTING
 
@@ -279,17 +272,18 @@ A particularly useful form for describing your testing process is via scenarios,
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
+RESPONSIVE TESTING
+
     DESKTOP
     - Desktop computer
         - 2560 x 1440
         - Google Chrome Developer Tool screen size emulation
 
     MOBILE
-    - iPhone 11 Pro Max     ??? x ???
-    - iPhone 11             ??? x ???
-    - iPhone 4s             ??? x ???
-    - iPad Air              ??? x ???
-    - iPad mini             ??? x ???
+    - iPhone 11 Pro Max
+    - iPhone 4s
+    - iPad Air
+    - iPad mini
 
 ## BUGS
 

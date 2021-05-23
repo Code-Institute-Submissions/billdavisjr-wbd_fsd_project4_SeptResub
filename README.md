@@ -211,6 +211,8 @@ Authentication
 Other
 
 * gunicorn - our web server
+* boto3 -
+* django_storages -
 
 ### JavaScript Frameworks
 

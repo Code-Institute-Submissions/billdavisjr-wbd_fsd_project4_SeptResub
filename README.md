@@ -12,6 +12,12 @@ PROJECT GIT REPOSITORY:
 
 This is the fourth milestone project for my Code Institute Full Stack Developer Course.
 
+Unfortunately, because I lost my previous job, had to find and start a new one, and due to a family emergency, I lost a lot of time and
+was not able to finish this project in the time available.  I am taking this course as a continuing education course after working hours
+and I just did not have enough time available. I am proving what I have done, rather than submitting nothing.
+
+CONCEPT:
+
 We've all seen quotations in books, hung on a wall, as an e-mail signature, or used in a presentation.
 
 This site is a quotations database and search engine, with categorizations and ratings. It's useful to search for quotations
@@ -87,6 +93,14 @@ DATABASE / DJANGO MODELS
         - DateSaid
         - Favorite (boolean)
         - Star Rating (float 0.0-5.0 in .5 increments) - not settable by users except sys admin
+
+To load the above database tables with data, fixtures are available.  From the command line do the following, in this order;
+It is important to do them in the right order:
+
+$ python3 manage.py loaddata categories
+$ python3 manage.py loaddata quotations
+
+dNOT YET CREATED:
 
     User Rating (of public. quotes)
         - User id
@@ -193,6 +207,10 @@ Used for PostgreSQL support (when deployed on Heroku where that is used instead 
 Authentication
 
 * django-allauth - Allauth, used for user loging/authentication
+
+Other
+
+* gunicorn - our web server
 
 ### JavaScript Frameworks
 

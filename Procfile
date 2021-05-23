@@ -1,0 +1,1 @@
+web: gunicorn quotations_space2.wsgi:application

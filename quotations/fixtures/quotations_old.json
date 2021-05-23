@@ -1,0 +1,962 @@
+[
+     { "pk":  3063, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Pessimism's just the common sense knowledge that there's more ways for something to go wrong than for it to go right...",
+                              "person": "Gardner Dozois",
+                              "source": "A Special Kind of Morning",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  9153, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Bushi ni nigon wa nai.",
+                              "person": "A warrior does not have a double tongue.",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  8785, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "One of the advantages of being disorderly is that one is constantly making exciting discoveries.",
+                              "person": "A. A. Milne",
+                              "source": "",
+                              "category": "3",
+                              "dateSaid": null,
+                              "yearsLived": "1882-1965",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": "1882-01-18",
+                              "favorite": "False"
+
+          }     },
+     { "pk":  9418, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "In every American there is an air of incorrigible innocence, which seems to conceal a diabolical cunning.",
+                              "person": "A. E. Housman",
+                              "source": "",
+                              "category": "13",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  4658, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Freedom of the press is limited to those who own one.",
+                              "person": "A. J. Liebling",
+                              "source": "",
+                              "category": "13",
+                              "dateSaid": null,
+                              "yearsLived": "1904 - 1963",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  6855, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Visualization and belief in a pattern of reality, Activates the creative power of Realization.",
+                              "person": "A. L. Linall Jr.",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  7133, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The best training any parent can give a child is to train the child to train himself.",
+                              "person": "A. P. Gouthey",
+                              "source": "",
+                              "category": "15",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  10631, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The nice thing about standards is that there are so many to choose from. And if you really don't like all the standards you just have to wait another year until the one arises you are looking for.",
+                              "person": "A. Tanenbaum",
+                              "source": "Introduction to Computer Networks",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  391, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "I am not a vegetarian because I love animals; I am a vegetarian because I hate plants.",
+                              "person": "A. Whitney Brown",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  4604, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Our bombs are smarter than the average high school student!  At least they can find Afghanistan.",
+                              "person": "A. Whitney Brown",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  9793, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "That is the saving grace of humor, if you fail no one is laughing at you.",
+                              "person": "A. Whitney Brown",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2589, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "... problems continue in the South African black townships. Four people were killed in violent clashes yesterday. A black spokesman said - this situation is a tragedy for our people; we get no help from the government; blacks are dying and all the whites can do is talk about cricket. [very brief pause] last night at the Sydney Cricket Ground, the South African cricket team defeated Australia in the day-night match .....",
+                              "person": "ABC-FM news (Australian)",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  150, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "A scream queen is an actress who eeks out a living.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  151, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Any sufficiently badly-written science is indistinguishable from magic. (aka Allston's Corollary to Clarke's Law)",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  159, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Definition of 'Free': You pay for it whether or not you elect to receive it.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "13",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  160, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Ennui and lethargy are waging a war inside me.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  149, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Feminism is sort of like God. Many people profess to believe in it, but no one seems to be able to define it to everyone's satisfaction.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  161, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "I really can't complain about actresses who get paid to be dumb. Most of us can't get paid to be smart.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  146, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "I'm content to stand on tradition. I'm even more content to wipe my feet on it.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  147, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "If you hack the Vatican server, have you tampered in God's domain?",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  162, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Lawyers are the first refuge of the incompetent.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  163, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Life is like an analogy.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  145, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Luck consists largely of hanging on by your fingernails until things start to go your way.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  153, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "No one pays me to be nice.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "6",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  142, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The analysis of the thing is not the thing itself.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  148, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The chief difference between horror fans and science fiction fans lies in why they won't walk backwards. A horror fan won't walk backwards because he knows he'll be knifed by a madman. A science fiction fan won't walk backwards because he knows he'll step on the cat.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  143, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The difference between tragedy and comedy: Tragedy is something awful happening to somebody else, while comedy is something awful happening to somebody else.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  144, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The good thing about being Dr. Frankenstein is that you can always make new friends.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  158, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The principle of Sturgeon's Razor states that the simplest answer to any problem is 90% crap.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  156, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The way to a man's heart is through his chest.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  152, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "There are two types of people in the world, and I'm one of them.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  141, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "This would not be a problem if I were driving a snowplow.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  155, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Violence is the first refuge of the violent.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  154, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "When all else fails, complicate matters.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  157, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Where can I get some tat? I'd like to trade it in.",
+                              "person": "Aaron Allston",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  5569, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "I wonder what it means when your grandson is more crotchety than you are.",
+                              "person": "Aaron McGruder",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  5376, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Late to bed and late to wake will keep you long on money and short on mistakes.",
+                              "person": "Aaron McGruder",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  3682, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "In the right light, at the right time, everything is extraordinary.",
+                              "person": "Aaron Rose",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  1507, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "History teaches us that men and nations behave wisely once they have exhausted all other alternatives.",
+                              "person": "Abba Eban",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  10135, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The first duty of a revolutionary is to get away with it.",
+                              "person": "Abbie Hoffman",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  1200, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Do not be content with showing friendship in words alone, let your heart burn with loving kindness for all who may cross your path.",
+                              "person": "Abdul Baha",
+                              "source": "",
+                              "category": "6",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  10565, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Let us have love and more love; a love that melts all opposition, a love that conquers all foes, a love that sweeps away all barriers, a love that aboundeth in charity, a large-heartedness, tolerance, forgiveness and noble striving, a love that triumphs over all obstacles.",
+                              "person": "Abdul Baha",
+                              "source": "",
+                              "category": "6",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  3029, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "I begin to think, that a calm is not desirable in any situation in life....Man was made for action and for bustle too, I believe.",
+                              "person": "Abigail Adams",
+                              "source": "letter to her sister, Mary Smith Cranch",
+                              "category": "1",
+                              "dateSaid": null,
+                              "yearsLived": "1744 - 1818",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": "1744-11-11",
+                              "favorite": "False"
+
+          }     },
+     { "pk":  9067, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "We have too many high sounding words, and too few actions that correspond with them.",
+                              "person": "Abigail Adams",
+                              "source": "",
+                              "category": "1",
+                              "dateSaid": null,
+                              "yearsLived": "1744 - 1818",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": "1744-11-11",
+                              "favorite": "False"
+
+          }     },
+     { "pk":  5966, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Wisdom and penetration are the fruit of experience, not the lessons of retirement and leisure. Great necessities call out great virtues.",
+                              "person": "Abigail Adams",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "1744 - 1818",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": "1744-11-11",
+                              "favorite": "False"
+
+          }     },
+     { "pk":  6410, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "A bad habit never disappears miraculously; it's an undo-it-yourself project.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "15",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  6361, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "If we could sell our experiences for what they cost us we'd be millionaires.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  5316, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "It is true that I was born in Iowa, but I can't speak for my twin sister.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "17",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  401, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "People who fight fire with fire usually end up with ashes.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "12",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  4276, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The best index to a person's character is (a) how he treats people who can't do him any good, and (b) how he treats people who can't fight back.",
+                              "person": "Abigail van Buren",
+                              "source": "",
+                              "category": "6",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  8448, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "The less you talk, the more you're listened to.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  7290, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "True, a little learning is a dangerous thing, but it still beats total ignorance.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "15",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  5784, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "While forbidden fruit is said to taste sweeter, it usually spoils faster.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  8180, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Wisdom doesn't automatically come with old age.  Nothing does - except wrinkles.  It's true, some wines improve with age, but only if the grapes were good in the first place.",
+                              "person": "Abigail Van Buren",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2065, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "...and that this country shall have a new birth of freedom, and that this government, of the people, for the people, by the people, shall not perish from the Earth.",
+                              "person": "Abraham Lincoln",
+                              "source": "Gettysburg Address",
+                              "category": "13",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  1988, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "'Tis better to be silent and be thought a fool, than to speak and remove all doubt.",
+                              "person": "Abraham Lincoln",
+                              "source": "(attributed)",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  7958, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "A house divided against itself cannot stand.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2000, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Always bear in mind that your own resolution to succeed is more important than any one thing.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2057, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Am I not destroying my enemies when I make friends of them?",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "14",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2028, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "And in the end, it's not the years in your life that count. It's the life in your years.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "10",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  7951, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Be sure you put your feet in the right place, then stand firm.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  9490, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Better to remain silent and be thought a fool, than to speak and remove all doubt.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "0",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2078, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "Both read the same Bible, and pray to the same God; and each invokes his aid against the other.... The prayers of both could not be answered--that of neither has been answered fully.",
+                              "person": "Abraham Lincoln",
+                              "source": "",
+                              "category": "4",
+                              "dateSaid": null,
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     },
+     { "pk":  2019, "model":  "quotations.quotation", 
+          "fields": {
+                              "text": "But, in a larger sense, we can not dedicate -- we can not consecrate -- we can not hallow -- this ground. The brave men, living and dead, who struggled here, have consecrated it, far above our poor power to add or detract. The world will little note, nor long remember what we say here, but it can never forget what they did here.",
+                              "person": "Abraham Lincoln",
+                              "source": "The Gettysburg Address",
+                              "category": "14",
+                              "dateSaid": "1863-11-19",
+                              "yearsLived": "1809 - 1865",
+                              "stars": "3.0",
+                              "occupation": "",
+                              "realName": "",
+                              "birthdate": null,
+                              "favorite": "False"
+
+          }     }
+]

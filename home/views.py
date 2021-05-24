@@ -11,7 +11,14 @@ def index(request):
 
     categories = Category.objects.all()
     quotations = Quotation.objects.all()
-    query = 'quot'
+
+    # Disabling searching for quotes with "quot" (quote/quotes/quotation) in it
+    # since we don't have enough of them gathered for a decent random choice of
+    # quotes about qoutes; instead choose a random quote from the entire
+    # database for now until more can be added.
+    
+    # query = 'quot'
+    query = ''
 
     # choose quote to display at random from those containing 'quot'
     # (which gets use quote, quotes, quotation, quoted, quoting, etc.)

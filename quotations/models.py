@@ -13,6 +13,9 @@ class Category(models.Model):
     # note: did not add null=True and blank=True params to these
     # as these both are required and must be non-blank
 
+    # get rid of warning from pylint
+    objects = models.Manager()
+
     def __str__(self):
         return self.display_name
 
@@ -35,6 +38,9 @@ class Quotation(models.Model):
     realName = models.CharField(max_length=254, blank=True)
     birthdate = models.DateField(null=True, blank=True)
     favorite = models.BooleanField(default=False)
+
+    # get rid of warning from pylint
+    objects = models.Manager()
 
     def __str__(self):
         return self.text + '  -- ' + self.person

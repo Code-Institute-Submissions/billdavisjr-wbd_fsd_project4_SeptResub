@@ -36,6 +36,8 @@ I'm not asking for sympathy, just expressiong my apologies for the state of this
 
 I have learned a lot from this course and I am disappointed that I was unable to do a better job. I'm sure I would have if I'd had more time available or was a full-time student. Hopefully my prior 3 projects demonstrate that, too.
 
+---
+
 ## PROJECT CONCEPT
 
 We've all seen quotations in books, hung on a wall, as an e-mail signature, or used in a presentation.
@@ -376,7 +378,15 @@ These could also be useful in creating final fixtures, since I moved data over f
 
 ### BUGS
 
-- pending
+#### Unusual bugs
+
+Ran into this problem after GitPod updated us to vscode from theia.  I was getting the message "Class 'Category' has no 'objects' memberpylint(no-member)" and a similar one for the other model, in views.py in the quotations app.  In Googling for the problem, it's a warning from the linter and there are several solutions but one is to add:
+
+> objects = models.Manager()
+
+in models.py for each model class.  There are other fixes as well that involved adding linter property settings but I preferred this fix.
+
+See: <https://stackoverflow.com/questions/45135263/class-has-no-objects-member#comment77506387_45150811>
 
 ---
 

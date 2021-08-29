@@ -17,7 +17,6 @@ def all_quotations(request):
     category_list = None
     sort = None
     direction = None
-    person = None
 
     if request.GET:
         # sort by person, stars, category

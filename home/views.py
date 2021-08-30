@@ -37,7 +37,7 @@ def index(request):
     else:
         randomquote = '"I love quotations because it is a joy to '
         + 'find thoughts one might have, beautifully '
-        + 'expressed with much authority by someone '
+        + 'expressed with much authority by someone ' 
         + 'recognized wiser than oneself."  -- Marlene Dietrich'
 
     context = {

@@ -65,7 +65,9 @@
                         <div class="dropdown-menu border-1" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <a href="" class="dropdown-item">Quotation Management</a>
+                                    <a href="admin" class="dropdown-item">Administration</a>
+                                    <a href="admin/quotations/quotation/" class="dropdown-item">Quotation Management</a>
+                                    <a href="admin/quotations/category/" class="dropdown-item">Category Management</a>
                                 {% endif %}
                                 <a href="" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -119,22 +121,16 @@
                 {% include 'includes/main-nav.html' %}
             </nav>
         </div>
-<!--
-        <div class="row d-none d-lg-flex text-center" id="qotd-banner" >
-            <div class="col bg-black text-white">
-                {% if qotd %}
-                    <h4 class="qotd-font my-1">{{ qotd }}</h4>
-                {% else %}
-                    <h4 class="qotd-font my-1">&ldquo;I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;  &mdash; Marlene Dietrich</h4>
+        <div class="row d-none d-lg-flex text-center" id="messages-banner" >
+            <div class="col bg-warning text-black message-container">
+                {% if messages %}
+                    {% for message in messages %}
+                        <span{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</span>
+                    {% endfor %}
                 {% endif %}
             </div>            
         </div>
--->
     </header>
-
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
 
     {% block page_header %}
     {% endblock %}
@@ -144,7 +140,6 @@
 
     {% block postloadjs %}
     {% endblock %}
-
-    
+   
   </body>
 </html>

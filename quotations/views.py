@@ -13,12 +13,18 @@ def all_quotations(request):
     quotations = Quotation.objects.all()
     categories = Category.objects.all()
 
+    total_quotations = quotations.count()
+
     query = None
     category_list = None
     sort = None
     direction = None
 
     if request.GET:
+        #
+        # TODO - allow multiple categories at once and filter through code below to get final result.
+        # TODO - reorder these; sort last
+        # 
         # sort by person, stars, category
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
@@ -40,6 +46,8 @@ def all_quotations(request):
             category_list = Category.objects.filter(name__in=category_filter)
             quotations = quotations.filter(category__name__in=category_filter)
 
+        # TODO - should the following to (person, q) be FIRST? 
+
         if 'person' in request.GET:
             query = request.GET['person']
             queries = Q(person__icontains=query)
@@ -57,6 +65,14 @@ def all_quotations(request):
     current_sorting = f'{sort}_{direction}'
     # Note: above variable will be None_None if no sorting
 
+    count = quotations.count()
+
+    if count == 0:
+        messages.error(request, "No results found for your search words.")
+        return redirect(reverse('quotations'))
+
+    messages.info(request, f'{count} quotes found.')
+
     context = {
         'quotations': quotations,
         'categories': categories,
@@ -71,7 +87,11 @@ def all_quotations(request):
 def quotation_detail(request, quotation_id):
     """ View to show all record detail for a particular quotation  """
 
-    quotation = get_object_or_404(Quotation, pk=quotation_id)
+    try:
+        quotation = get_object_or_404(Quotation, pk=quotation_id)
+    except Exception as e:
+        messages.error(request, f'Could not find quote. Error: {e}')
+        return redirect(reverse('quotations'))
 
     context = {
         'quotation': quotation,

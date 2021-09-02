@@ -4,19 +4,25 @@
 {% block page_header %} 
     <div class="container header-container h-25">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+            </div>
         </div>
     </div>
-
 {% endblock %}
 
 {% block content %}
     <div class="container h-100">
+        <div class="row">
+            <div class="col-12">&nbsp;</div>
+        </div>
         <div class="row" id="qotd-banner">
-            <div class="offset-3 col-6 bg-black text-white text-center">
+            <div class="offset-2 col-8 bg-black text-white text-center">
                 {% if randomquote %}
-                    <h4 class="qotd-font my-1">&ldquo;{{ randomquote.text }}&rdquo;</h4>
-                    <h4 class="qotd-font my-1 text-right"> &mdash; {{ randomquote.person }}</h4>
+                <h4 class="qotd-font my-1">&nbsp;</h4>
+                <h4 class="qotd-font my-1">&ldquo;{{ randomquote.text }}&rdquo;</h4>
+                <h4 class="qotd-font my-1">&nbsp;</h4>
+                <h4 class="qotd-font my-1 text-right"> &mdash; {{ randomquote.person }}</h4>
+                <h4 class="qotd-font my-1">&nbsp;</h4>
                 {% else %}
                     <h4 class="qotd-font my-1">&ldquo;I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;</h4>
                     <h4 class="quotd-font my-1 text-right"> &mdash; Marlene Dietrich</h4>
@@ -34,5 +40,4 @@
             </div>
         </div>
     </div>
-
 {% endblock %}

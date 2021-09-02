@@ -68,10 +68,13 @@ def all_quotations(request):
     count = quotations.count()
 
     if count == 0:
-        messages.error(request, "No results found for your search words.")
+        messages.error(request, f'No results found for your search words: "{query}" ')
         return redirect(reverse('quotations'))
 
-    messages.info(request, f'{count} quotes found.')
+    if count != total_quotations:
+        messages.info(request, f'{count} quotes found of {total_quotations} in database containing "{query}"')
+    else:
+        messages.info(request, f'{total_quotations} quotes in database')
 
     context = {
         'quotations': quotations,
@@ -90,7 +93,7 @@ def quotation_detail(request, quotation_id):
     try:
         quotation = get_object_or_404(Quotation, pk=quotation_id)
     except Exception as e:
-        messages.error(request, f'Could not find quote. Error: {e}')
+        messages.error(request, f'ERROR: {e}')
         return redirect(reverse('quotations'))
 
     context = {

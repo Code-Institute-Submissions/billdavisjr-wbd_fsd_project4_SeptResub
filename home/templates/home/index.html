@@ -12,16 +12,16 @@
 
 {% block content %}
     <div class="container h-100">
-        <div class="row">
+        <div class="row h-auto">
             <div class="col-12">&nbsp;</div>
         </div>
         <div class="row" id="qotd-banner">
-            <div class="offset-2 col-8 bg-black text-white text-center">
+            <div class="offset-1 col-10 bg-black text-white text-center">
                 {% if randomquote %}
                 <h4 class="qotd-font my-1">&nbsp;</h4>
                 <h4 class="qotd-font my-1">&ldquo;{{ randomquote.text }}&rdquo;</h4>
                 <h4 class="qotd-font my-1">&nbsp;</h4>
-                <h4 class="qotd-font my-1 text-right"> &mdash; {{ randomquote.person }}</h4>
+                <h4 class="qotd-font my-1 text-right"> &mdash; {{ randomquote.person }} &nbsp; &nbsp; </h4>
                 <h4 class="qotd-font my-1">&nbsp;</h4>
                 {% else %}
                     <h4 class="qotd-font my-1">&ldquo;I love quotations because it is a joy to find thoughts one might have, beautifully expressed with much authority by someone recognized wiser than oneself.&rdquo;</h4>
@@ -29,15 +29,13 @@
                 {% endif %}
             </div>            
         </div>
-        <div class="row">
-            <div class="col text-center">
-                <div class="my-5">
-                    <h4>
-                        <!-- <a href="{% url 'quotations' %}" class="browse-now-button btn btn-lg border-black text-uppercase py-3">Browse Now!</a> -->
-                        <a href="{% url 'home' %}" class="browse-now-button btn btn-lg border-black text-uppercase py-3">Random Quote!</a>
-                    </h4>
-                </div>
+        <div class="row py-5">
+            <div class="col-2 text-center">&nbsp;</div>
+            <div class="col-8 text-center">
+                    <a href="{% url 'quotations' %}" class="browse-now-button btn btn-lg border-black text-uppercase py-3 px-2 mx-3 my-2">Browse Quotes</a>
+                    <a href="{% url 'home' %}" class="browse-now-button btn btn-lg border-black text-uppercase py-3 px-2 mx-3 my-2">Random Quote!</a>
             </div>
+            <div class="col-2 text-center">&nbsp;</div>
         </div>
     </div>
 {% endblock %}

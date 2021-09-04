@@ -2,10 +2,10 @@
     <ul class="navbar-nav w-auto mx-auto">
 
         <li class="nav-item dropdown">
-            <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="sorting-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="manage-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Manage
             </a>
-            <div class="dropdown-menu border-1" aria-labelledby="sorting-link">
+            <div class="dropdown-menu border-1" aria-labelledby="manage-link">
                 <a href="" class="dropdown-item">Add quote</a>
                 <a href="" class="dropdown-item">Edit quote</a>
                 <a href="" class="dropdown-item">Delete quote</a>
@@ -18,7 +18,7 @@
 
         <li class="nav-item dropdown">
             <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="sorting-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sorting
+                Sort
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="sorting-link">
                 <a href="{% url 'quotations' %}?sort=person&direction=asc" class="dropdown-item">By Person</a>
@@ -43,7 +43,7 @@
 
         <li class="nav-item dropdown">
             <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="ratings-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Star Rating
+                Rating
             </a>
             <div class="dropdown-menu border-1" aria-labelledby="ratings-link">
                 <a href="" class="dropdown-item">5 star</a>
@@ -61,24 +61,35 @@
             <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="featured-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Featured
             </a>
-            <div class="dropdown-menu border-1" aria-labelledby="featured-link">
+            <div class="dropdown-menu border-1 scrollable-menu" aria-labelledby="featured-link">
                 <!-- FUTURE: get this from a "featured" table in the models. Add this to the GitHub issues section as a feature request-->
                 <a href="{% url 'quotations' %}?person=Albert%20Einstein" class="dropdown-item">Albert Einstein</a>
                 <a href="{% url 'quotations' %}?person=Benjamin%20Franklin" class="dropdown-item">Benjamin Franklin</a>
                 <a href="{% url 'quotations' %}?person=Carl%20Sagan" class="dropdown-item">Carl Sagan</a>
+                <a href="{% url 'quotations' %}?person=Clifford%20Stoll" class="dropdown-item">Clifford Stoll</a>
                 <a href="{% url 'quotations' %}?person=Robert%20Oppenheimer" class="dropdown-item">J. Robert Oppenheimer</a>
                 <div class="dropdown-divider"></div>
                 <a href="{% url 'quotations' %}?person=Arthur%20C.%20Clark" class="dropdown-item">Arthur C. Clarke</a>
-                <a href="{% url 'quotations' %}?person=Isaac%20Asimov" class="dropdown-item">Isaac Asimov</a>
+                <a href="{% url 'quotations' %}?person=Christopher%20Reeve" class="dropdown-item">Christopher Reeve</a>
                 <a href="{% url 'quotations' %}?person=Douglas%20Adams" class="dropdown-item">Douglas Adams</a>
+                <a href="{% url 'quotations' %}?person=Dr.%20Seuss" class="dropdown-item">Dr. Seuss</a>
+                <a href="{% url 'quotations' %}?person=Isaac%20Asimov" class="dropdown-item">Isaac Asimov</a>
                 <a href="{% url 'quotations' %}?person=Tolkien" class="dropdown-item">J.R.R. Tolkien</a>
                 <div class="dropdown-divider"></div>
                 <a href="{% url 'quotations' %}?person=Abraham%20Lincoln" class="dropdown-item">Abraham Lincoln</a>
+                <a href="{% url 'quotations' %}?person=Dwight%20D.%20Eisenhower" class="dropdown-item">Dwight D. Eisenhower</a>
+                <a href="{% url 'quotations' %}?person=Roosevelt" class="dropdown-item">Franklin D. & Eleanor Roosevelt</a>
                 <a href="{% url 'quotations' %}?person=Ambrose%20Bierce" class="dropdown-item">Ambrose Bierce</a>
                 <a href="{% url 'quotations' %}?person=Frank%20Lloyd%20Wright" class="dropdown-item">Frank Lloyd Wright</a>
+                <a href="{% url 'quotations' %}?person=Martin%20Luther%20King" class="dropdown-item">Dr. Martin Luther King Jr.</a>
+                <a href="{% url 'quotations' %}?person=Dalai%20Lama" class="dropdown-item">Dalai Lama</a>
+                <a href="{% url 'quotations' %}?person=George%20Bernard%20Shaw" class="dropdown-item">George Bernard Shaw</a>
                 <div class="dropdown-divider"></div>
-                <a href="{% url 'quotations' %}?person=Japanese%20Proverb" class="dropdown-item">Japanese Proverb</a>
-                <a href="{% url 'quotations' %}?person=Chinese%20Proverb" class="dropdown-item">Chinese Proverb</a>
+                <a href="{% url 'quotations' %}?person=George%20Carlin" class="dropdown-item">George Carlin</a>
+                <a href="{% url 'quotations' %}?person=Groucho%20Marx" class="dropdown-item">Groucho Marx</a>
+                <div class="dropdown-divider"></div>
+                <a href="{% url 'quotations' %}?person=Japanese" class="dropdown-item">Japanese Proverbs</a>
+                <a href="{% url 'quotations' %}?person=Chinese%20Proverb" class="dropdown-item">Chinese Proverbs</a>
                 <a href="{% url 'quotations' %}?person=Confucius" class="dropdown-item">Confucius</a>
 
                 <!--

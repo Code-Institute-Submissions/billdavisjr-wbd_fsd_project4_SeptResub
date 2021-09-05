@@ -134,3 +134,36 @@ def add_quotation(request):
     }
 
     return render(request, template, context)
+
+# login and super-user required disabled until we support accounts fully
+#@login_required
+def edit_quotation(request, quotation_id):
+    """ Edit a quotation in the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    quotation = get_object_or_404(Quotation, pk=quotation_id)
+
+    if request.method == 'POST':
+        form = QuotationForm(request.POST, request.FILES, instance=quotation)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'Successfully updated quotation #{ quotation.id }!')
+            return redirect(reverse('quotation_detail', args=[quotation.id]))
+        else:
+            messages.error(request,
+                           ('Failed to update quotation. '
+                            'Please ensure the form is valid.'))
+    else:
+        form = QuotationForm(instance=quotation)
+        messages.info(request, f'You are editing quotation #{quotation.id}')
+
+    template = 'quotations/edit_quotation.html'
+    context = {
+        'form': form,
+        'quotation': quotation,
+    }
+
+    return render(request, template, context)
+

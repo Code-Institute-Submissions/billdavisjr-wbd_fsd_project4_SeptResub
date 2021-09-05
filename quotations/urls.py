@@ -21,4 +21,5 @@ urlpatterns = [
     path('', views.all_quotations, name='quotations'),
     path('<int:quotation_id>/', views.quotation_detail, name='quotation_detail'),
     path('add/', views.add_quotation, name='add_quotation'),
+    path('edit/<int:quotation_id>/', views.edit_quotation, name='edit_quotation'),
 ]

@@ -125,6 +125,8 @@
             <div class="col-12 mt-0 pt-0 bg-warning pt-0 text-black message-container">
                 {% if messages %}
                     {% for message in messages %}
+                        {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}<span class="text-error">ERROR!: </span>{% endif %}
+                        {% if message.level == DEFAULT_MESSAGE_LEVELS.SUCCESS %}<span class="text-success">SUCCESS!: </span>{% endif %}
                         <span{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</span>
                     {% endfor %}
                 {% endif %}

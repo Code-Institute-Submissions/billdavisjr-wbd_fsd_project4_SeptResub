@@ -16,4 +16,4 @@ class QuotationForm(forms.ModelForm):
 
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
-
+            field.widget.attrs['id'] = field_name

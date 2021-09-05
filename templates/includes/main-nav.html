@@ -1,20 +1,28 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
 
-        <li class="nav-item dropdown">
-            <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="manage-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Manage
-            </a>
-            <div class="dropdown-menu border-1" aria-labelledby="manage-link">
-                <a href="" class="dropdown-item">Add quote</a>
-                <a href="" class="dropdown-item">Edit quote</a>
-                <a href="" class="dropdown-item">Delete quote</a>
-                <div class="dropdown-divider"></div>
-                <a href="" class="dropdown-item">Add category</a>
-                <a href="" class="dropdown-item">Edit category</a>
-                <a href="" class="dropdown-item">Delete category</a>
-            </div>
-        </li>
+<!--
+        {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+-->
+            <li class="nav-item dropdown">
+                <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="manage-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Manage
+                </a>
+                <div class="dropdown-menu border-1" aria-labelledby="manage-link">
+                    <a href="{% url 'add_quotation' %}" class="dropdown-item">Add quote</a>
+                    <a href="" class="dropdown-item">Edit quote</a>
+                    <a href="" class="dropdown-item">Delete quote</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="" class="dropdown-item">Add category</a>
+                    <a href="" class="dropdown-item">Edit category</a>
+                    <a href="" class="dropdown-item">Delete category</a>
+                </div>
+            </li>
+<!--
+            {% endif %}
+        {% endif %}
+-->
 
         <li class="nav-item dropdown">
             <a class="menu-font font-weight-bold nav-link text-black mr-5" href="#" id="sorting-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

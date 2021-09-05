@@ -19,5 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.all_quotations, name='quotations'),
-    path('<quotation_id>', views.quotation_detail, name='quotation_detail'),
+    path('<int:quotation_id>/', views.quotation_detail, name='quotation_detail'),
+    path('add/', views.add_quotation, name='add_quotation'),
 ]

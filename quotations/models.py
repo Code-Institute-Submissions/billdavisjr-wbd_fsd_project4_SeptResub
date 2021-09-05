@@ -22,6 +22,9 @@ class Category(models.Model):
     def get_display_name(self):
         return self.display_name
 
+    def get_friendly_name(self):
+        return self.display_name
+
 
 class Quotation(models.Model):
     category = models.ForeignKey('Category', null=True,

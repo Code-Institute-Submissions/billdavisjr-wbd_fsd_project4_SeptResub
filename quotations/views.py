@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Quotation, Category
 from django.db.models.functions import Lower
+
+from .models import Quotation, Category
+from .forms import QuotationForm
 
 # Create your views here.
 
@@ -101,3 +103,34 @@ def quotation_detail(request, quotation_id):
     }
 
     return render(request, 'quotations/quotation_detail.html', context)
+
+
+# login and super-user required disabled until we support accounts fully
+# @login_required
+def add_quotation(request):
+    """ Add a quotation to the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = QuotationForm(request.POST, request.FILES)
+        if form.is_valid():
+            #quotation = form.save()
+            form.save()
+            messages.success(request, 'Successfully added quotation!')
+            # return redirect(reverse('quotation_detail', args=[quotation.id]))
+            return redirect(reverse('add_quotation'))
+        else:
+            messages.error(request,
+                           ('Failed to add quotation. '
+                            'Please ensure the information on the form is valid.'))
+    else:
+        form = QuotationForm()
+
+    template = 'quotations/add_quotation.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

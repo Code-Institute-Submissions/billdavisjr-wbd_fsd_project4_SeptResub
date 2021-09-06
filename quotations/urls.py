@@ -22,4 +22,9 @@ urlpatterns = [
     path('<int:quotation_id>/', views.quotation_detail, name='quotation_detail'),
     path('add/', views.add_quotation, name='add_quotation'),
     path('edit/<int:quotation_id>/', views.edit_quotation, name='edit_quotation'),
+    path('delete/<int:quotation_id>/', views.delete_quotation, name='delete_quotation'),
+    path('categories/', views.all_categories, name='categories'),
+    path('add_category/', views.add_category, name='add_category'),
+    path('edit_category/<int:category_id>/', views.edit_category, name='edit_category'),
+    path('delete_category/<int:category_id>/', views.delete_category, name='delete_category'),
 ]

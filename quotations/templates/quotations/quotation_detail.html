@@ -29,18 +29,28 @@
                     </div>
                     <div class="card-footer bg-white pt-0 border-0 text-left">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-12">
                                 <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 text-left">
+                                {% if quotation.favorite %}
+                                    <i class="fas fa-heart mr-1 mb-0 text-danger"></i>
+                                {% else %}
+                                    <i class="far fa-heart mr-1 mb-0 text-danger"></i>
+                                {% endif %}
+                            </div>
+                            <div class="col-6 text-right">
                                 {% if quotation.stars %}
-                                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ quotation.stars }} / 5.0</small>
+                                    <small class="text-muted"><i class="fas fa-star mr-1 text-warning"></i>{{ quotation.stars }} / 5.0</small>
                                 {% else %}
                                     <small class="text-muted">No Rating</small>
                                 {% endif %}
-                                {% if quotation.favorite %}
-                                    <p class="text-danger mb-0"><i class="fas fa-heart mr-1"></i></p>
-                                {% else %}
-                                    <p class="text-danger mb-0"><i class="far fa-heart mr-1"></i></p>
-                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-left">
                                 <!--
                                     - get category name from category id in quotation.category
                                 -->
@@ -50,23 +60,31 @@
                                     <span class="badge badge-pill badge-warning">{{ quotation.category.display_name }}</span>
                                 </a>
                                 {% endif %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-left">
                                 <hr>
                                 <p class="mb-0"><strong>Source:</strong> {{ quotation.source }}</p>
                                 <p class="mb-0"><strong>Date Said:</strong> {{ quotation.dateSaid }}</p>
                                 <p class="mb-0"><strong>Years Lived:</strong> {{ quotation.yearsLived }}</p>
                                 <p class="mb-0"><strong>Birth Date:</strong> {{ quotation.birthdate }}</p>
                                 <p class="mb-0"><strong>Real Name:</strong> {{ quotation.realName }}</p>
-                                <p class="mb-0"><strong>Quote #</strong> {{ quotation.pk }}</p>
+                                <p class="mb-0"><strong>Quote ID #</strong> {{ quotation.pk }}</p>
                                 <hr>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 text-right">
-                                <a id="edit_button" href="{% url 'edit_quotation' quotation.pk %}">
-                                    <i class="fa fa-pencil text-primary" title="Edit quotation"></i>
+                            <!-- {% if request.user.is_superuser %} -->
+                                <a class="btn btn-md border-black" id="edit_button" href="{% url 'edit_quotation' quotation.pk %}">
+                                    <i class="fa fa-pencil text-primary" title="Edit quotation"></i> Edit
                                 </a>
-                                    &nbsp;
-                                <i class="fa fa-trash-o mr-1 text-danger" title="Delete quotation"></i>
+                                    &nbsp;&nbsp;
+                                    <a class="btn btn-md border-black" id="delete_button" href="{% url 'delete_quotation' quotation.pk %}">
+                                    <i class="fa fa-trash-o mr-1 text-danger" title="Delete quotation"></i> Delete
+                                </a>
+                            <!-- {% endif %} -->
                             </div>
                         </div>
                     </div>

@@ -22,50 +22,28 @@
                     </div>
                 </div>
                 <div class="row">
-                    {% for quotation in quotations %}
+                    {% for category in categories %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="card h-100 border-1">
                                 <div class="card-body pb-0">
-                                    <a href="{% url 'quotation_detail' quotation.id %}"><p class="quote_text lead mb-0 font-weight-bold">"{{ quotation.text }}"</p></a>
+                                    <a href="{% url 'quotations' %}?category={{ category.name }}"><p class="quote_text lead mb-0 font-weight-bold">{{ category.display_name }}</p></a>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
-                                        <div class="col">
-                                            <!-- turn the person into a col-12 and the stars and other stuff such as favorite into new row with a col-# -->
-                                            <p class="mb-0 text-right"><em> &mdash; {{ quotation.person }}</em></p>
+                                        <div class="col-12">
+                                            <p class="mb-0 text-left"><em>ID: {{ category.id }}</em> - key: {{ category.name }}</p>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
-                                            &nbsp;
+                                        <div class="col-12">
+                                            <hr>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-12"><hr></div>
-                                        <div class="col-6 text-left">
-                                            {% if quotation.favorite %}
-                                                <small class="text-danger"><i class="fas fa-heart mr-1"></i></small>
-                                            {% else %}
-                                            <small class="text-danger"><i class="far fa-heart mr-1"></i></small>
-                                            {% endif %}
-                                        </div>               
-                                        <div class="col-6 text-right">
-                                            {% if quotation.stars %}
-                                                <small class="text-muted"><i class="text-warning fas fa-star mr-1"></i>{{ quotation.stars }} / 5.0</small>
-                                            {% else %}
-                                                <small class="text-muted"><i class="text-warning far fa-star mr-1"></i>No Rating</small>
-                                            {% endif %}
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-2 text-left">
-                                            <a href="{% url 'quotation_detail' quotation.id %}"><i class="fa fa-ellipsis-h text-muted"></i></a>
-                                        </div>
-                                        <div class="col-10 text-right">
-                                            <i class="fas fa-tag mr-1"></i>
-                                            <a class="category-badge text-decoration-none" href="{% url 'quotations' %}?category={{ quotation.category.name }}">
-                                                <span class="badge badge-pill badge-warning">{{ quotation.category.display_name }}</span>
-                                            </a>
+                                        <div class="col-12 text-right px-0 mx-0">
+                                            <a class="text-success" href="{% url 'quotations' %}?category={{ category.name }}"><i class="btn fa fa-search text-success mx-0 px-0"></i>Search</a> &nbsp; &nbsp;
+                                            <a class="text-primary" href="{% url 'edit_category' category.id %}"><i class="fa fa-pencil text-primary"></i> Edit</a> &nbsp; &nbsp; 
+                                            <a class="text-danger" href="{% url 'delete_category' category.id %}"><i class="fa fa-trash text-danger"></i> Delete</a> &nbsp; &nbsp; 
                                         </div>
                                     </div>
                                 </div>

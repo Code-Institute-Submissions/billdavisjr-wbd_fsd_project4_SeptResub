@@ -10,8 +10,13 @@
                     Manage
                 </a>
                 <div class="dropdown-menu border-1" aria-labelledby="manage-link">
-                    <a href="{% url 'add_quotation' %}" class="dropdown-item">Add quote</a>
-                    <a href="" class="dropdown-item">Add category</a>
+                    &nbsp; QUOTATIONS
+                    <a href="{% url 'quotations' %}" class="dropdown-item">Quotation List</a>
+                    <a href="{% url 'add_quotation' %}" class="dropdown-item">Add quotation</a>
+                    <div class="dropdown-divider"></div>
+                    &nbsp; CATEGORIES
+                    <a href="{% url 'categories' %}" class="dropdown-item">Category List</a>
+                    <a href="{% url 'add_category' %}" class="dropdown-item">Add category</a>
                 </div>
             </li>
 <!--

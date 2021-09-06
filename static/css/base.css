@@ -9,7 +9,7 @@ body {
     color: #555;
     font-family: 'Lato';
 }
-
+ 
 #topnav {
     /* from https://commons.wikimedia.org/wiki/File:StarfieldSimulation.gif */
     background-image: url('/media/StarfieldSimulation.gif'); 

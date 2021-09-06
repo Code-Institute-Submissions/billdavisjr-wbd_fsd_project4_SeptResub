@@ -4,7 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Quotation, Category
-from .forms import QuotationForm
+from .forms import QuotationForm, CategoryForm
 
 # Create your views here.
 
@@ -70,11 +70,16 @@ def all_quotations(request):
     count = quotations.count()
 
     if count == 0:
-        messages.error(request, f'No results found for your search words: "{query}" ')
+        if query != None:
+            messages.error(request, f'No results found for your search words: "{query}" ')
+
         return redirect(reverse('quotations'))
 
     if count != total_quotations:
-        messages.info(request, f'{count} quotes found of {total_quotations} in database containing "{query}"')
+        if query != None:
+            messages.info(request, f'{count} quotes found of {total_quotations} in database containing "{query}"')
+        else: 
+            messages.info(request, f'{count} quotes found of {total_quotations} in database')
     else:
         messages.info(request, f'{total_quotations} quotes in database')
 
@@ -116,11 +121,10 @@ def add_quotation(request):
     if request.method == 'POST':
         form = QuotationForm(request.POST, request.FILES)
         if form.is_valid():
-            #quotation = form.save()
-            form.save()
+            quotation = form.save()
             messages.success(request, 'Successfully added quotation!')
-            # return redirect(reverse('quotation_detail', args=[quotation.id]))
-            return redirect(reverse('add_quotation'))
+            return redirect(reverse('quotation_detail', args=[quotation.id]))
+            # return redirect(reverse('add_quotation'))
         else:
             messages.error(request,
                            ('Failed to add quotation. '
@@ -166,4 +170,127 @@ def edit_quotation(request, quotation_id):
     }
 
     return render(request, template, context)
+
+
+#@login_required
+def delete_quotation(request, quotation_id):
+    """ Delete a quotation from the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    try:
+        quotation = get_object_or_404(Quotation, pk=quotation_id)
+        quotation.delete()
+        messages.success(request, f'Quotation #{quotation_id} deleted!')
+        return redirect(reverse('quotations'))
+    except Exception as errmsg:
+        messages.error(request, f'Unable to delete quotation #{quotation_id}; error:  {errmsg}')
+        return redirect(reverse('quotation_detail', args=[quotation.id]))
+
+    return redirect(reverse('quotations'))
+
+
+def all_categories(request):
+    """ View to show all categories """
+
+    categories = Category.objects.all()
+    total_categories = categories.count()
+
+    sortkey = 'lower_name'
+    categories = categories.annotate(lower_name=Lower('name'))
+    categories = categories.order_by(sortkey)
+
+    messages.info(request, f'{total_categories} categories')
+
+    context = {
+        'categories': categories,
+    }
+
+    return render(request, 'quotations/categories.html', context)
+
+
+# login and super-user required disabled until we support accounts fully
+# @login_required
+def add_category(request):
+    """ Add a quotation to the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = CategoryForm(request.POST)
+        if form.is_valid():
+            category = form.save()
+            messages.success(request, f'Successfully added category #{category.id}: {category.display_name}')
+            return redirect(reverse('categories'))
+        else:
+            messages.error(request,
+                           ('Failed to add category.'
+                            'Please ensure the information on the form is valid.'))
+    else:
+        form = CategoryForm()
+
+    template = 'quotations/add_category.html'
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+# login and super-user required disabled until we support accounts fully
+# @login_required
+def edit_category(request, category_id):
+    """ Edit a category in the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    category = get_object_or_404(Category, pk=category_id)
+
+    if request.method == 'POST':
+        form = CategoryForm(request.POST, instance=category)
+        if form.is_valid():
+            form.save()
+            messages.success(request, f'Updated category #{ category.id }: { category.display_name }')
+            return redirect(reverse('categories'))
+        else:
+            messages.error(request,
+                           ('Failed to update category. '
+                            'Please ensure the form is valid.'))
+    else:
+        form = CategoryForm(instance=category)
+        messages.info(request, f'You are editing category #{category.id}: {category.display_name}')
+
+    template = 'quotations/edit_category.html'
+    context = {
+        'form': form,
+        'category': category,
+    }
+
+    return render(request, template, context)
+
+
+#@login_required
+
+
+# @login_required
+def delete_category(request, category_id):
+    """ Delete a category from the database """
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only site owners can do that.')
+    #     return redirect(reverse('home'))
+
+    try:
+        category = get_object_or_404(Category, pk=category_id)
+        category.delete()
+        messages.success(request, f'Category #{category_id}: "{category.name}" deleted!')
+        return redirect(reverse('categories'))
+    except Exception as errmsg:
+        messages.error(request, f'Unable to delete category #{category_id}: "{category.name}"; error:  {errmsg}')
+        return redirect(reverse('categories'))
+
+    return redirect(reverse('categories'))
 

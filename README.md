@@ -18,6 +18,38 @@ DEPLOYED PROJECT SITE
 
 ---
 
+## CHANGES IN FIRST RESUBMISSION
+
+Because I work full time and am taking this course as a continuing-education course in my spare time, I was not to complete the entire
+projects in the time available. But I was able to come within 2% of the 50% passing score.  So I took advantage of the first of two
+allowed resubmissions in the hopes that I could obtain a better grade.
+
+### ADDED IN THIS RESUBMISSION
+
+- Added links in My Account menu (when authenticated and superuser) to go to Django admin, Django admin quotes table editing and Django admin category table editing.
+- Added new Manage menu for add/change/delete quotes and categories.
+  - Added add-quotation functionality
+  - Added edit-quotation functionality
+  - Added delete-quotation functionality
+  - Added category list functionality
+  - Added add-category functionality
+  - Added edit-category functionality
+  - Added delete-category functionality
+- Fixed error when passing a quote id that isn’t found
+- Remove authors who are not in database yet from ‘Featured’ menu.
+- Expanded "Featured" menu
+- Added message header (was disabled) for displaying Django messages.
+  - If no results found on search, display message telling user that.
+  - Display count of search results and total # of quotes in database.
+- Fixed lots of cosmetic problems on different size screens
+- Added “deployment” documentation for GitPod and Heroku to the README.md file (finished or close to it, but untested
+
+There is still a lot to do, but I only had a few days in which to work on the submission and I hope that this version will be more acceptable, even if it is still unfinished.
+
+I tagged the prior submission in Git as "FirstSubmission" in case you wish to review the original submission.
+
+---
+
 ## INTRODUCTION
 
 This is the fourth milestone project for my Code Institute Full Stack Developer Course.
